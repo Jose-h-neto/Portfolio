@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Portfólio de José Neto, desenvolvedor web especializado em front-end e back-end. Confira meus projetos e habilidades.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Portfólio | José Neto - Desenvolvedor Web</title>
     <link rel="stylesheet" href="css/styles.css">
     <script defer src="js/script.js"></script>
@@ -29,7 +33,7 @@
         <section id="home">
             <div class="container">
                 <div class="banner-image">
-                    <img src="assets/images/banner.jpg" alt="José Neto, desenvolvedor web">
+                    <img src="assets/images/banner.jpg" loading="lazy" alt="José Neto, desenvolvedor web">
                 </div>
                 <div class="banner-text">
                     <h1>Olá, eu sou José Neto</h1>
@@ -89,8 +93,31 @@
         <section id="projetos">
             <div class="container">
                 <h2>Projetos</h2>
+                <!-- Seção de projetos em destaque -->
                 <div class="highlights">
                     <h3>Destaques</h3>
+                    <div class="project-cards">
+                        <article class="box">
+                            <div class="cover">
+                                <img src="assets/images/agrovittae-nutritech.jpg" alt="Agrovittae Nutritech">
+                                <div class="detail">
+                                    <p>Agrovittae Nutritech</p>
+                                    <div class="mini-languages">
+                                        <img src="assets/mini-languages/wordpress.svg" alt="wordpress">
+                                        <img src="assets/mini-languages/figma.svg" alt="figma">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <p>2024</p>
+                                <button class="project-btn">Ver projeto</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Seção de todos os projetos -->
+                <div class="allprojects">
+                    <h3>Todos os Projetos</h3>
                     <div class="project-cards">
                         <article class="box">
                             <div class="cover">
@@ -113,6 +140,75 @@
 
             </div>
         </section>
+        <!-- Seção de contatos -->
+        <section id="contacts" class="js-section">
+            <div class="contacts">
+                <div class="container">
+                    <h2>Contatos</h2>
+                    <div class="icons">
+                        <div class="icon">
+                            <a href="mailto:jose.h.neto@outlook.com" target="blank">
+                                <div class="box">
+                                    <img src="assets/contacts/mail.svg" alt="e-mail">
+                                </div>
+                            </a>
+                            <a href="mailto:jose.h.neto@outlook.com" target="blank">
+                                <p>E-mail</p>
+                            </a>
+                            <a href="mailto:jose.h.neto@outlook.com" target="blank">
+                                <p>jose.h.neto@outlook.com</p>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://api.whatsapp.com/send?phone=5516994395738" target="_blank">
+                                <div class="box">
+                                    <img src="assets/contacts/phone.svg" alt="telefone">
+                                </div>
+                            </a>
+                            <a href="https://api.whatsapp.com/send?phone=5516994395738" target="_blank">
+                                <p>Telefone</p>
+                            </a>
+                            <a href="https://api.whatsapp.com/send?phone=5516994395738" target="_blank">
+                                <p>(16) 99439-5738</p>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/in/josé-hipólito-908932371" target="_blank">
+                                <div class="box">
+                                    <img src="assets/contacts/linkedin.svg" alt="linkedin">
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/josé-hipólito-908932371" target="_blank">
+                                <p>LinkedIn</p>
+                            </a>
+                            <a href="https://www.linkedin.com/in/josé-hipólito-908932371" target="_blank">
+                                <p>@josé-hipólito</p>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://github.com/Jose-h-neto" target="_blank">
+                                <div class="box">
+                                    <img src="assets/contacts/github.svg" alt="github">
+                                </div>
+                            </a>
+                            <a href="https://github.com/Jose-h-neto" target="_blank">
+                                <p>Github</p>
+                            </a>
+                            <a href="https://github.com/Jose-h-neto" target="_blank">
+                                <p>@Jose-h-neto</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Rodapé -->
+        <footer id="footer">
+            <div class="container">
+                <p>Feito em HTML, CSS e JS por José Neto.</p>
+                <p>© 2026. Todos os direitos reservados.</p>
+            </div>
+        </footer>
     </main>
 </body>
 
