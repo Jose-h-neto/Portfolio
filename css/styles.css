@@ -1,0 +1,13 @@
+/* Raíz de variáveis CSS */
+:root {
+    --font-primary: 'Archivo', sans-serif;
+    --color-primary: #00b4d8;
+    --color-background: #03045e;
+    --color-text: white;
+    --color-title: #00b4d8;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-background);
+}
