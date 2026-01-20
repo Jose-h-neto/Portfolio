@@ -13,6 +13,7 @@
     <title>Portfólio | José Neto - Desenvolvedor Web</title>
     <link rel="stylesheet" href="css/styles.css">
     <script defer src="js/script.js"></script>
+    <script defer src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 
 <!-- Corpo do site -->
@@ -38,8 +39,10 @@
         <section id="home">
             <div class="container">
                 <div class="banner-text">
-                    <h1>OLÁ! ME CHAMO <span class="highlight-texto">JOSÉ NETO.</span></h1>
-                    <p>Desenvolvedor Web Front-end e Back-end | Next.js | React.js | Node.js</p>
+                    <p>Seja bem vindo(a)!</p>
+                    <h1>ME CHAMO <span id="typed-name" class="highlight-texto"></span></h1>
+                    <p><span id="typed-stack"></span></p>
+
                     <div class="actions">
                         <a href="assets/cv/cv-jose-h-neto.pdf" download>Download CV</a>
                         <a href="mailto:jose.h.neto@outlook.com" target="_blank">Entrar em contato</a>
@@ -48,7 +51,6 @@
                 <div class="banner-image">
                     <img src="assets/images/banner.jpg" loading="lazy" alt="José Neto, desenvolvedor web">
                 </div>
-            </div>
         </section>
 
         <section id="sobre">
@@ -70,35 +72,37 @@
                 <div class="cards">
                     <!-- Cada Habilidade está dentro de um cardzinho-->
                     <div class="box">
-                        <img src="assets/icons/html5-icon.svg" alt="Ícone HTML5">
+                        <img src="assets\icons\html5-icon.svg" alt="html5-icon">
                         <p>HTML5</p>
                     </div>
                     <div class="box">
-                        <img src="assets/icons/javascript-icon.svg" alt="Ícone JavaScript">
+                        <img src="assets\icons\javascript-icon.svg" alt="html5-icon">
                         <p>JavaScript</p>
                     </div>
+
                     <div class="box">
-                        <img src="assets/icons/css3-icon.svg" alt="Ícone CSS3">
+                        <img src="assets\icons\css3-icon.svg" alt="html5-icon">
                         <p>CSS3</p>
                     </div>
                     <div class="box">
-                        <img src="assets/icons/react-icon.svg" alt="Ícone React.js">
+                        <img src="assets\icons\reactjs-icon.svg" alt="html5-icon">
                         <p>React.js</p>
                     </div>
+
                     <div class="box">
-                        <img src="assets/icons/sql-server-icon.svg" alt="Ícone SQL Server">
-                        <p>SQL Server</p>
+                        <img src="assets\icons\sql-icon.svg" alt="html5-icon">
+                        <p>SQL</p>
                     </div>
                     <div class="box">
-                        <img src="assets/icons/adobe-icon.svg" alt="Ícone Adobe">
-                        <p>Pacote Adobe</p>
+                        <img src="assets\icons\adobe-icon.svg" alt="html5-icon">
+                        <p>Adobe CC</p>
                     </div>
                     <div class="box">
-                        <img src="assets/icons/wordpress-icon.svg" alt="Ícone WordPress">
+                        <img src="assets\icons\wordpress-icon.svg" alt="html5-icon">
                         <p>WordPress</p>
                     </div>
+
                 </div>
-            </div>
         </section>
         <section id="projetos">
             <div class="container">
@@ -120,8 +124,8 @@
 
                                 <div class="footer-card">
                                     <div class="mini-languages">
-                                        <img src="assets/mini-languages/wordpress.svg" alt="wordpress">
-                                        <img src="assets/mini-languages/figma.svg" alt="figma">
+                                        <img src="assets/icons/wordpress-icon.svg" alt="wordpress">
+                                        <img src="assets/icons/figma-icon.svg" alt="figma">
                                     </div>
                                     <button class="project-btn" data-project="agrovittae">Ver projeto</button>
                                 </div>
@@ -146,8 +150,8 @@
 
                                 <div class="footer-card">
                                     <div class="mini-languages">
-                                        <img src="assets/mini-languages/wordpress.svg" alt="wordpress">
-                                        <img src="assets/mini-languages/figma.svg" alt="figma">
+                                        <img src="assets/icons/wordpress-icon.svg" alt="wordpress">
+                                        <img src="assets/icons/figma-icon.svg" alt="figma">
                                     </div>
                                     <button class="project-btn" data-project="agrovittae">Ver projeto</button>
                                 </div>
@@ -223,6 +227,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
 </body>
 
 </html>

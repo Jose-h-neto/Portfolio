@@ -2,7 +2,7 @@
 const projetosData = {
     "agrovittae": {
         titulo: "Agrovittae Nutritech",
-        videoUrl: "https://streamable.com/e/84kzet?autoplay=1&muted=1", // Preciso usar o link /e/ para embed
+        videoUrl: "https://streamable.com/e/b8i45n?autoplay=1&muted=1", // Preciso usar o link /e/ para embed
         ano: "2024",
         descricao: "Website corporativo desenvolvido para a Agrovittae Nutritech.<br> Implementei uma interface intuitiva para exibição de produtos da empresa. O projeto seguiu a identidade visual da marca, garantindo uma experiência de usuário consistente e agregando valor à empresa por meio de um design responsivo e ágil",
         techs: ["WordPress", "Figma"],
@@ -72,5 +72,28 @@ document.addEventListener("DOMContentLoaded", () => {
             modal.style.display = "none";
             document.body.style.overflow = "auto";
         }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Animação para o Nome
+    new Typed('#typed-name', {
+        strings: ['JOSÉ NETO'],
+        typeSpeed: 100,
+        showCursor: false, // Remove o tracinho piscante se não quiser no nome
+        startDelay: 500,
+    });
+
+    // Animação para as Stacks (com efeito de apagar e trocar)
+    new Typed('#typed-stack', {
+        strings: [
+            'Desenvolvedor Web Front-end e Back-end',
+            '| Next.js | React.js | Node.js'
+        ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 2000, // Tempo que o texto fica parado antes de apagar
+        loop: true, // Faz a animação ficar rodando infinitamente
+        cursorChar: '|', // O caractere que pisca
     });
 });

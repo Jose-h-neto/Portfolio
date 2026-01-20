@@ -64,6 +64,7 @@ h2 {
     color: var(--color-subtitle);
     font-size: 2rem;
     text-transform: uppercase;
+    padding: 33px;
 }
 
 h1 {
@@ -81,9 +82,9 @@ header {
     position: sticky;
     width: 100%;
     gap: 20px;
-    background-color: rgba(0, 14, 41, 0.6);
+    background-color: rgba(0, 14, 41, 0.4);
     padding: 20px 0;
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--color-primary);
 }
 
@@ -186,8 +187,28 @@ header nav ul li a:hover {
 
 #home .banner-image img {
     /* Controla o tamanho da foto */
-    max-width: 300px;
+    max-width: 400px;
     width: 100%;
+    border: solid 3px var(--color-subtitle);
+    border-radius: 100%;
+    /* Ativa a animação de flutuar */
+    animation: float 6s ease-in-out infinite;
+    margin: 50px;
+}
+
+/* Definição do movimento de flutuação */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 /* === SOBRE ===*/
@@ -199,7 +220,7 @@ header nav ul li a:hover {
     padding: 40px 20px;
 }
 
-/* === PROJETOS ===*/
+/* === HABILIDADES ===*/
 
 #skills {
     text-align: center;
@@ -240,17 +261,19 @@ header nav ul li a:hover {
 #skills .box img {
     width: 50px;
     height: 50px;
-    object-fit: contain;
-    /* Garante que o ícone não distorça */
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 #skills .box p {
     font-weight: bold;
     font-size: 0.9rem;
-    color: var(--color-text);
+    color: var(--color-subtitle);
+    text-transform: uppercase;
     margin: 0;
     /* Remove margens extras se existirem */
 }
+
+/* === PROJETOS ===*/
 
 #projetos {
     text-align: center;
@@ -286,7 +309,7 @@ header nav ul li a:hover {
 
 #projetos .project-cards .box {
     display: flex;
-    background-color: var(--color-card);
+    background-color: rgba(0, 14, 41, 0.3);
     border: 2px solid rgba(0, 180, 216, 0.1);
     border-radius: 15px;
     flex-direction: column;
@@ -307,12 +330,18 @@ header nav ul li a:hover {
     width: 100%;
     height: 200px;
     overflow: hidden;
+    /* Ordem: topo-esq, topo-dir, base-dir, base-esq */
+    border-radius: 15px 15px 0 0;
 }
 
 #projetos .cover img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /* Acompanha o container pai */
+    border-radius: 15px 15px 0 0;
+    display: block;
+    opacity: 100%;
 }
 
 /* Área de conteúdo que vai esticar */
@@ -327,6 +356,7 @@ header nav ul li a:hover {
 
 .project-name {
     font-weight: bold;
+    text-transform: uppercase;
     font-size: 1.1rem;
     color: var(--color-title);
     margin-bottom: 5px;
@@ -403,8 +433,8 @@ header nav ul li a:hover {
 }
 
 #contacts .icon img {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
 }
 
 /* Interatividade (Hovers) */
@@ -475,7 +505,7 @@ header nav ul li a:hover {
 }
 
 .modal-content {
-    background-color: var(--color-background);
+    background-color: var(--color-card);
     border: 1px solid rgba(0, 180, 216, 0.4);
     border-radius: 20px;
 
@@ -636,6 +666,7 @@ header nav ul li a:hover {
 /* Garante que o H2 não tenha margem interna no topo que "empurre" o texto para baixo */
 .modal-right h2 {
     margin-top: 0;
+    padding: 0;
     /* Ajusta a altura da linha para um alinhamento fino */
     line-height: 1.1;
 }
